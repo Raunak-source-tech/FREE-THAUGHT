@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Free Thoughts</title>
-
-    <!-- Firebase CDN for Firebase SDK -->
+    <!-- Firebase SDK -->
     <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
     <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+    <!-- Your custom script -->
+    <script src="ft.js" defer></script>
+    <style>
+        /* Add your styles here */
+    </style>
 </head>
+
 <body>
     <div id="content"></div>
-
-    <!-- Reference to your ft.js file -->
-    <script src="ft.js"></script>
 </body>
+
 </html>
