@@ -1,74 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Free Thoughts</title>
-  <style>
-    body, html {
-      margin: 0;
-      padding: 0;
-      font-family: sans-serif;
-    }
-    #content {
-      height: 100vh;
-    }
-    #app-container {
-      display: flex;
-      height: 100vh;
-    }
-    #sidebar {
-      width: 220px;
-      background-color: #007BFF;
-      color: white;
-      padding: 20px;
-      display: flex;
-      flex-direction: column;
-      gap: 15px;
-      align-items: flex-start;
-    }
-    #sidebar h2 {
-      margin-bottom: 20px;
-    }
-    .nav-btn {
-      background-color: white;
-      color: #007BFF;
-      border: none;
-      padding: 10px 15px;
-      border-radius: 8px;
-      cursor: pointer;
-      width: 100%;
-      text-align: left;
-    }
-    .nav-btn:hover {
-      background-color: #e6f0ff;
-    }
-    #main-content {
-      flex: 1;
-      background-color: white;
-      padding: 30px;
-      overflow-y: auto;
-    }
-    .post {
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      padding: 15px;
-      margin-bottom: 15px;
-    }
-    .reaction-btn {
-      margin-right: 10px;
-      cursor: pointer;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Thoughts</title>
+    <!-- Firebase CDN for Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.6.1/firebase-analytics.js"></script>
 </head>
 <body>
+    <div id="content"></div>
 
-  <div id="content"></div>
-
-  <!-- Firebase scripts -->
-  <script src="https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/11.6.1/firebase-database.js"></script>
-  <script src="js/ft.js"></script>
-
+    <!-- Reference to your ft.js file -->
+    <script src="ft.js" type="module"></script>
 </body>
 </html>
